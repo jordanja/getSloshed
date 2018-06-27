@@ -17,3 +17,11 @@ a {
   height: 30px;
   /*width: 100%;*/
 }
+
+.navbar{
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  text-align: center;
+  padding: 14px;
+}
