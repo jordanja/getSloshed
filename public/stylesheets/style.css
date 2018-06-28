@@ -1,27 +1,50 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
 }
 
 
 #map {
-  height: 600px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
+    height: 600px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
 }
 
 #logo {
-  height: 30px;
+    height: 30px;
+    text-align: center;
   /*width: 100%;*/
 }
 
-.navbar{
-  display: inline-block;
-  float: none;
-  vertical-align: middle;
-  text-align: center;
-  padding: 14px;
+.navbar {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+    text-align: center;
+    padding: 14px;
+}
+
+
+#logo_image {
+    background-image: url('images/Empty.jpg');
+    height: 30px;
+    text-align: center;
+}
+
+.container {
+    height: 30px;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

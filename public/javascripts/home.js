@@ -11,16 +11,11 @@ function initMap() {
 
     var a = {lat: -29.344, lng: 131.036};
 
-
-
-
     autocomplete = new google.maps.places.Autocomplete(
         (document.getElementById('value')), {
             types: ['geocode']
         }
     );
-
-
 
     map = new google.maps.Map(document.getElementById('map'), {});
 
@@ -32,16 +27,6 @@ function initMap() {
     }
     querySearch(centerPoint);
 
-
-
-    /*
-    var marker = new google.maps.Marker(
-        {
-            position: a,
-            map: map
-        }
-    );
-    */
 }
 
 
@@ -118,7 +103,7 @@ function callback(results, status) {
 
 
 
-            var content = "<a href=#>" +  String(place.name) + "</a>" ;
+            var content = "<a href=/bar?id=" + place.id + ">" +  String(place.name) + "" ;
             google.maps.event.addListener(marker,'click', (function (marker, content, infoWindow) {
                 return function() {
                     infoWindow.setContent(content);
