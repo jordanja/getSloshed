@@ -3,15 +3,20 @@
  */
 var express = require('express');
 var router = express.Router();
+var request = require('request');
 
+
+function getPlaceDetails(req, res, next) {
+
+
+
+
+
+
+}
 
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-    res.render('bar', {
-
-        title: 'Express',
-        test: "blah"
-    });});
+router.get('/', getPlaceDetails);
 
 module.exports = router;

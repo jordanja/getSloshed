@@ -57,8 +57,10 @@ function querySearch(placeId) {
 
                 var request = {
                     location: results[0].geometry.location,
-                    radius: '5000',
-                    type: ['bar']
+                    radius: '50000',
+                    //types: ['natural_feature'],
+
+                    name: 'Beach'
 
                 };
 
