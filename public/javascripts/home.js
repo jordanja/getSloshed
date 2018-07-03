@@ -56,9 +56,8 @@ function querySearch(placeId) {
 
 
                 var request = {
-                    location: results[0].geometry.location,
-                    radius: '50000',
-                    //types: ['natural_feature'],
+                    location: map.getCenter(),
+                    radius: '10000',
 
                     name: 'Beach'
 
@@ -105,7 +104,7 @@ function callback(results, status) {
 
 
 
-            var content = "<a href=/bar?id=" + place.id + ">" +  String(place.name) + "" ;
+            var content = "<a href=/beach?id=" + place.id + ">" +  String(place.name) + "" ;
             google.maps.event.addListener(marker,'click', (function (marker, content, infoWindow) {
                 return function() {
                     infoWindow.setContent(content);
